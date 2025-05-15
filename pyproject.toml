@@ -5,7 +5,11 @@ build-backend = "hatchling.build"
 [project]
 name = "project-name"
 version = "0.0.1"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
+dependencies = [
+  "example-dep1~=3.5.2",
+  "example-dep2~=1.4.0",
+]
 
 [project.scripts]
 cli-name = "project_name.main:main"
